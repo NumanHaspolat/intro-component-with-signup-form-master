@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="left-div">
+        <p class="header">Learn to code by watching others</p>
+        <p class="par">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="right-div">
+        <div class="trial-div">
+          Try it free 7 days
+          <span class="trial-light">then $20/mo. thereafter</span>
+        </div>
+
+        <div class="main">
+          <div class="box">
+            <i class="fa-solid fa-circle-exclamation hidden"></i>
+            <input type="text" id="f-name" placeholder="First Name" />
+            <p class="f-name-error error hidden">First Name cannot be empty</p>
+          </div>
+
+          <div class="box">
+            <i class="fa-solid fa-circle-exclamation hidden"></i>
+            <input type="text" id="l-name" placeholder="Last Name" />
+            <p class="l-name-error error hidden">Last Name cannot be empty</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-circle-exclamation hidden"></i>
+            <input type="email" id="email" placeholder="Email Address" />
+            <p class="email-error error hidden">
+              Looks like this is not an email
+            </p>
+          </div>
+
+          <div class="box">
+            <i class="fa-solid fa-circle-exclamation hidden"></i>
+            <input type="password" id="password" placeholder="Password" />
+            <p class="pass-error error hidden">Password cannot be empty</p>
+          </div>
+
+          <button class="claim-btn">Claim your free trial</button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <span class="terms-red">Terms and Services</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

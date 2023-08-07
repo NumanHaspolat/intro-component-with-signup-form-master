@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/*
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+
+- Blue: hsl(248, 32%, 49%)
+
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%) */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
+  overflow: hidden;
+}
+
+#f-name,
+#l-name,
+#email,
+#password {
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  position: relative;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: hsl(0, 100%, 74%);
+  text-align: end;
+  font-style: italic;
+  font-size: 11.7px;
+  font-weight: 600;
+}
+
+.left-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 500px;
+}
+
+.header {
+  font-size: 3.7rem;
+  font-weight: 700;
+  color: white;
+}
+
+.par {
+  color: white;
+  opacity: 0.9;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.right-div {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.trial-div {
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.trial-light {
+  color: hsl(246, 25%, 87%);
+  font-weight: 400;
+}
+
+.main {
+  display: flex;
+  background-color: white;
+  padding: 2.3rem;
+  border-radius: 0.7rem;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem 1.3rem;
+  border-radius: 0.25rem;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(249, 10%, 26%);
+}
+
+input:focus {
+  outline: none;
+  border: 1.9px solid hsl(248, 32%, 49%);
+}
+
+.claim-btn {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  transition: 0.4s;
+  border-bottom: 3px solid hsl(249, 10%, 46%);
+  border-left: 1.5px solid hsl(249, 10%, 66%);
+  border-right: 1.5px solid hsl(249, 10%, 66%);
+}
+
+.claim-btn:hover {
+  background-color: hsl(154, 59%, 67%);
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 10.5px;
+  font-weight: 700;
+}
+
+.terms-red {
+  color: hsl(0, 100%, 74%);
+}
+
+.error-border {
+  border: none;
+  outline: 1.9px solid hsl(0, 100%, 74%);
+}
+
+.fa-circle-exclamation {
+  position: absolute;
+  color: hsl(0, 100%, 74%);
+  font-size: 1.5rem;
+  top: 12px;
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+  .header {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .par {
+    text-align: center;
+  }
+}
